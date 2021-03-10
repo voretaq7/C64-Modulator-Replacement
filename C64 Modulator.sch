@@ -121,7 +121,7 @@ CHROMA_OUT
 Wire Wire Line
 	1050 7325 1050 7400
 $Comp
-L rca_plug:RCA_PLUG J9
+L RCA_Jack:RCA_PLUG J9
 U 1 1 5D0D8017
 P 9500 1150
 F 0 "J9" H 9510 1270 50  0000 C CNN
@@ -149,7 +149,7 @@ $EndComp
 Wire Wire Line
 	9500 1350 9500 1425
 $Comp
-L trs_3.5mm:TRS_3.5mm J8
+L TRS_Jack:TRS_3.5mm J8
 U 1 1 5D0D92E8
 P 9300 1700
 F 0 "J8" H 9300 1990 50  0000 C CNN
@@ -931,12 +931,12 @@ $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5F7D5BDA
-P 2775 7150
-F 0 "#PWR03" H 2775 6900 50  0001 C CNN
-F 1 "GND" H 2780 6977 50  0000 C CNN
-F 2 "" H 2775 7150 50  0001 C CNN
-F 3 "" H 2775 7150 50  0001 C CNN
-	1    2775 7150
+P 2775 7525
+F 0 "#PWR03" H 2775 7275 50  0001 C CNN
+F 1 "GND" H 2780 7352 50  0000 C CNN
+F 2 "" H 2775 7525 50  0001 C CNN
+F 3 "" H 2775 7525 50  0001 C CNN
+	1    2775 7525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -947,9 +947,6 @@ Wire Wire Line
 Connection ~ 2775 6875
 Wire Wire Line
 	2775 6875 2775 7075
-Connection ~ 2775 7075
-Wire Wire Line
-	2775 7075 2775 7150
 Wire Notes Line
 	2600 6250 4150 6250
 Wire Notes Line
@@ -960,4 +957,35 @@ Wire Notes Line
 	2600 7925 2600 6250
 Text Notes 2775 7875 0    60   ~ 0
 Support attachments to\n     main board.
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 6048DE81
+P 2975 7250
+F 0 "J10" H 3003 7276 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3003 7185 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2975 7250 50  0001 C CNN
+F 3 "~" H 2975 7250 50  0001 C CNN
+	1    2975 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 604928C9
+P 2975 7425
+F 0 "J11" H 3003 7451 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3003 7360 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2975 7425 50  0001 C CNN
+F 3 "~" H 2975 7425 50  0001 C CNN
+	1    2975 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 7075 2775 7250
+Connection ~ 2775 7075
+Wire Wire Line
+	2775 7250 2775 7425
+Connection ~ 2775 7250
+Wire Wire Line
+	2775 7425 2775 7525
+Connection ~ 2775 7425
 $EndSCHEMATC

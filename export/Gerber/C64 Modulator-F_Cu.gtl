@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.6-0-10_14)*%
-%TF.CreationDate,2020-10-06T19:45:13-04:00*%
+%TF.CreationDate,2021-03-10T02:09:14-05:00*%
 %TF.ProjectId,C64 Modulator,43363420-4d6f-4647-956c-61746f722e6b,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.6-0-10_14)) date 2020-10-06 19:45:13*
+G04 Created by KiCad (PCBNEW (5.1.6-0-10_14)) date 2021-03-10 02:09:14*
 %MOMM*%
 %LPD*%
 G01*
@@ -1429,6 +1429,10 @@ X120142000Y-108902500D03*
 %TO.N,GND*%
 X120142000Y-79438500D03*
 %TD*%
+%TO.P,J10,1*%
+%TO.N,GND*%
+X136017000Y-63627000D03*
+%TD*%
 %TO.P,J4,1*%
 %TO.N,GND*%
 X180911500Y-108902500D03*
@@ -1436,6 +1440,10 @@ X180911500Y-108902500D03*
 %TO.P,J3,1*%
 %TO.N,GND*%
 X180911500Y-79438500D03*
+%TD*%
+%TO.P,J11,1*%
+%TO.N,GND*%
+X165227000Y-63627000D03*
 %TD*%
 D15*
 %TO.P,U1,3*%
@@ -1450,7 +1458,7 @@ D16*
 X178435000Y-89154000D03*
 D17*
 %TO.P,U1,*%
-%TO.N,GND*%
+%TO.N,*%
 X161775000Y-86614000D03*
 %TD*%
 D18*
